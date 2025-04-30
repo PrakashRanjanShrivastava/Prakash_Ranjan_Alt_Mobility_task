@@ -11,9 +11,7 @@ FROM customer_orders;
 --There are 14,668 total orders, with a significant total revenue (amount hidden in the dataset).
 
 --🔹 Order Status Distribution
-sql
-Copy
-Edit
+ 
 SELECT 
     order_status,
     COUNT(*) AS order_count,
