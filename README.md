@@ -138,7 +138,7 @@ Returned and placed additional orders in subsequent months
 
 **SQL Query to Extract Cohort Retention Data:**
 
- <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/retention_analysis.sql>Customer_Retention_Analysis.sql</a>
+ <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/retention_analysis.sql">Customer_Retention_Analysis.sql</a>
  
 
 Quesry Rseult - 
