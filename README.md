@@ -70,6 +70,8 @@ Highest order amount
 
 **Order and Sales Analysis**
 
+SQL QUERIES
+
  <a href ="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/orders-sales-analysis.sql">Orders_Sales.sql</a>
  
 
@@ -90,7 +92,8 @@ Customer lifetime value (CLV proxy)
  
 
  **Customer Analysis**
-
+ 
+SQL QUERIES
  
  <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/customer_analysis.sql">Customer_Analysis.sql</a>
  
@@ -107,21 +110,25 @@ Failure rate by method
 
 Total paid vs unpaid orders
 
+**--Payment Status Analysis**
+
+ SQL QUERIES
  
  <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/payment_analysis.sql">Payments_Status.sql</a>
  
 
 ***4. Order Details Report***
 
+SQL QUERIES
   
   <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/order_details_report.sql">Order_Details.sql</a>
  
 
 
  
- ***-- 4 Comprehensive order report***
+ ***Comprehensive order report***
 
-   
+   Table File
 
 <a href = " https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/Combined_Order_Payment_Report_Table.csv">Comprehensive order payment report</a>
 
@@ -165,7 +172,7 @@ Quesry Rseult -
 <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data_Visualization_Power%20BI/Customer_retention.pbit">Power_BI_Dashboard</a>
  
 
- ## 🔍 Analysis Summary
+ ## 🔍 Analysis and Insights Summary
 
 ### 1. Order & Sales Analysis
 - Steady monthly sales (210–240 orders/month)
