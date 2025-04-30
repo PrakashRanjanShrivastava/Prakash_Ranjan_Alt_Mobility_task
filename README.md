@@ -16,11 +16,16 @@ This case study analyzes sales, customer behavior, and payment patterns for ALT 
 
   There is two datasets:
 
-customer_orders.csv (visualized as customer_order.png)
+customer_orders.csv 
+
+<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/payments.csv">payments.csv</a>
+
 
 Fields: order_id, customer_id, order_date, order_amount, shipping_address, order_status
 
-payments.csv (visualized as payments.png)
+payments.csv  
+
+<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/customer_orders.csv">customer_orders.csv</a>
 
 Fields: payment_id, order_id, payment_date, payment_amount, payment_method, payment_status
 
@@ -42,7 +47,11 @@ Fields: payment_id, order_id, payment_date, payment_amount, payment_method, paym
 
 ## SQL Code For Analysing the data 
 
-*** 1. Order and Sales Analysis***
+ALL SQL QUERIES
+
+<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/_SQL_QURIES.pdf">ALL_SQL_QUERIES</a>
+
+***1. Order and Sales Analysis***
 
 --- KPIs:
 
@@ -58,36 +67,11 @@ Monthly revenue trend
 
 Highest order amount
 
- 
 
 **Order and Sales Analysis**
 
------Total Order and Total Revenue 
-
-
- Total odres 15000 and Total revnue  -3808899.1915102**
-
--- Order status distribution
-
-
-Almost Equal amount of distribution in order satuts .i.e almost 33% and around  5000 order count , althogu shipped order cunt little  .i.e 4874**
+ <a href ="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/orders-sales-analysis.sql">Orders_Sales.sql</a>
  
-
----- Monthly Revenue Trend
-
- 
-There is no such change or trend in montly sales , or sale in year , there is almost same around 210-240 order each mnoth every year**
-
-
---- Highest Order Amount
-
- 
-The  highest order amount is 499.9**
-
---  Average order value by status
-
-
-Same  average for all order status** 
 
 **2. Customer Analysis***
 
@@ -107,43 +91,11 @@ Customer lifetime value (CLV proxy)
 
  **Customer Analysis**
 
-----Total and Unique Customers
-
+ 
+ <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/customer_analysis.sql">Customer_Analysis.sql</a>
  
 
-There are almost 7334 customers** 
-
---  Customer order frequency
-
- 
-The most  no of order repeated is 8**
-
---  Repeat customers (customers with >1 order)
- 
-
-There are 4402 repeated customer out of 7334 customer  , Means good customer retention.***
-
-
------Average Orders per Customer
- 
-AVG orders per customer is 2**
-
-
---  Time between orders for repeat customers
-
- 
- Average  time between order repeated is 479** 
-
- 
------Monthly Unique Customers
-
- 
-Around 220-240 unique customer each month each year**
-
- 
-There is less frequent coustomer .i.e. 816 than there is  one time (2932) and Occasional customers (3586)*******
-
-**Payment Status Analysis**
+**3.Payment Status Analysis**
    
  KPIs:
  
@@ -156,98 +108,20 @@ Failure rate by method
 Total paid vs unpaid orders
 
  
+ <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/payment_analysis.sql">Payments_Status.sql</a>
  
- **Payment Status Analysis**
- 
-----Payment Status Summary
-
-
-Around same distribution of payment status (pending failed completed) .i.e 33% or  5000  transactional _count ******
-
-***Payment Method vs Status***
- 
-
-For every payemnt method and every payment stauts the count is in b/w 1650-1750**
-
------ Payment Failure Rate by Method
-
- Almost same failure reate for every Payment method .i.e almost 33%**
-
---  Orders with payment issues
- 
-
- There is around  5500  orders with missing  payments or null value**
- 
-
-***Delivered Orders with Failed Payments****
-
- 
- There is around 1650 delivered orders with failed payment*** 
 
 ***4. Order Details Report***
 
   
-  
-Full view of orders with payment
-
+  <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/order_details_report.sql">Order_Details.sql</a>
  
 
- SQL Queries:
-
- ----Combined Order-Payment Report
-
-SELECT 
-    o.order_id,
-    o.customer_id,
-    o.order_date,
-    o.order_amount,
-    o.order_status,
-    p.payment_id,
-    p.payment_date,
-    p.payment_amount,
-    p.payment_method,
-    p.payment_status
-    
-FROM customer_orders o
-
-LEFT JOIN payments p ON o.order_id = p.order_id;
 
  
  ***-- 4 Comprehensive order report***
 
- 
-SELECT 
-
-    co.order_id, co.customer_id,
-    co.order_date,
-    co.order_amount,
-    co.order_status,
-    co.shipping_address,
-    p.payment_id,
-    p.payment_date,
-    p.payment_amount,
-    p.payment_method,
-    p.payment_status,
-    
-    CASE 
-    
-        WHEN p.payment_status = 'completed' AND p.payment_amount >= co.order_amount THEN 'Fully Paid'
-        
-        WHEN p.payment_status = 'completed' AND p.payment_amount < co.order_amount THEN 'Partially Paid'
-        
-        WHEN p.payment_status = 'failed' THEN 'Payment Failed'
-        
-        WHEN p.payment_id IS NULL THEN 'No Payment Record'
-        
-        ELSE 'Payment Pending'
-        
-    END AS payment_summary
-    
-FROM customer_orders co
-
-LEFT JOIN payments p ON co.order_id = p.order_id
-
-ORDER BY co.order_date DESC;`
+   
 
 <a href = " https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/Combined_Order_Payment_Report_Table.csv">Comprehensive order payment report</a>
 
@@ -264,45 +138,8 @@ Returned and placed additional orders in subsequent months
 
 **SQL Query to Extract Cohort Retention Data:**
 
-Identify cohort month (first purchase month for each customer)
-
-WITH cohort AS (
-    SELECT 
-        customer_id,
-        DATEFROMPARTS(YEAR(MIN(order_date)), MONTH(MIN(order_date)), 1) AS cohort_month
-    FROM customer_orders
-    GROUP BY customer_id
-),
-
---  Get all order months for every order
-
-orders_by_month AS (
-    SELECT 
-        customer_id,
-        DATEFROMPARTS(YEAR(order_date), MONTH(order_date), 1) AS order_month
-    FROM customer_orders
-),
-
---  Join to match cohort month and all order months for each customer
-
-cohort_analysis AS (
-    SELECT 
-        c.customer_id,
-        c.cohort_month,
-        o.order_month
-    FROM cohort c
-    JOIN orders_by_month o ON c.customer_id = o.customer_id
-)
-
--- Count how many customers from each cohort ordered in subsequent months
-
-SELECT 
-    cohort_month,
-    order_month,
-    COUNT(DISTINCT customer_id) AS retained_customers
-FROM cohort_analysis
-GROUP BY cohort_month, order_month
-ORDER BY cohort_month, order_month;
+ <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/retention_analysis.sql>Customer_Retention_Analysis.sql</a>
+ 
 
 Quesry Rseult - 
 
@@ -318,8 +155,6 @@ Quesry Rseult -
  ![Customer_retention](https://github.com/user-attachments/assets/a8b39bfc-1538-4c75-aca7-5f74092d461b)
 
 
- 
-
 
 
 
@@ -327,6 +162,7 @@ Quesry Rseult -
 
 **DashBoard**
 
+<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data_Visualization_Power%20BI/Customer_retention.pbit">Power_BI_Dashboard</a>
  
 
  ## 🔍 Analysis Summary
@@ -360,6 +196,12 @@ Quesry Rseult -
 - Launch loyalty + reactivation campaigns
 - Improve order status resolution workflows
 
+<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Reports/Recommendation">Recommendations</a>
+
+
+## Report
+
+<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Reports/Final_Report_Alt_Mobility.pdf">Final_Report.pdf</a>
 
 ## 🔗 Author
 
