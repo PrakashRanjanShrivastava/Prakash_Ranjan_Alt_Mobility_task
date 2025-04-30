@@ -1,8 +1,6 @@
 --Order and Sales Analysis
 --🔹 Total Orders and Revenue
-sql
-Copy
-Edit
+ 
 SELECT 
     COUNT(*) AS total_orders,
     SUM(order_amount) AS total_revenue
