@@ -1,1 +1,80 @@
+**Order and Sales Analysis Report**
+Executive Summary
+Total Orders: 15,000
 
+Total Revenue: [ 3808899.1915102]
+
+Average Order Value:  [253.926612767347]
+
+Customer Retention Rate: 60% (4,402 repeat customers out of 7,334 total)
+
+1. Order Performance
+1.1 Order Status Distribution
+Status	Order Count	Percentage	Total Amount
+
+Delivered	4,874	33.24%	[1284616.01073742]
+Shipped	4,897	33.39%	[1245883.14057255]
+Pending	4,897	33.39%	[1278400.04020023]
+
+Key Insight: Nearly equal distribution across all order statuses.
+
+1.2 Monthly Sales Trend
+Consistent monthly orders: 210-240 orders/month
+
+No significant seasonal trends observed
+
+Highest single order value: $499.90
+
+2. Customer Analysis
+2.1 Customer Base
+Total Unique Customers: 7,334
+
+Repeat Customers: 4,402 (60% retention rate)
+
+Average Orders per Customer: 2
+
+2.2 Customer Segmentation
+
+Segment	Customer Count
+One-time	2,932 (40%)
+Occasional (2-3)	3,586 (49%)
+Frequent (4+)	816 (11%)
+
+2.3 Purchase Frequency
+Average days between orders: 479 days
+
+Maximum orders by single customer: 8 orders
+
+3. Payment Analysis
+3.1 Payment Status Overview
+Status	Transaction Count	Percentage	Total Amount
+Completed	~5,000	33%	[1273403.02000189]
+Pending	~5,000	33%	[1273403.02000189]
+Failed	~5,000	33%	[1273618.68932962]
+
+3.2 Payment Method Performance
+Consistent failure rate: ~33% across all methods
+
+1,650 delivered orders with failed payments identified
+
+5,500 orders with missing payment records
+
+4. Key Findings & Recommendations
+
+Findings:
+
+Stable but Flat Sales: Consistent monthly orders indicate stable business but no growth
+
+Payment Challenges: High failure rates and missing payments require investigation
+
+Customer Retention: Strong 60% repeat customer rate but low frequent buyers
+
+Recommendations:
+
+Implement payment verification system to reduce failures
+
+Develop loyalty program to convert occasional to frequent buyers
+
+Investigate root cause of missing payment records
+
+Consider marketing initiatives to boost monthly order volume
