@@ -1,6 +1,17 @@
 # Prakash_Ranjan_Alt_Mobility_task
+# 🧠 ALT Mobility Case Study – Data Analyst Project
 
-# Prakash_Alt_Mobility_
+This case study analyzes sales, customer behavior, and payment patterns for ALT Mobility, an EV leasing company. The objective is to derive key business insights and improve customer retention and revenue.
+
+---
+
+## 📦 Project Structure
+
+- **SQL/** – All raw queries used for analysis.
+- **PowerBI/** – Power BI dashboard and data files.
+- **Reports/** – PDF summary reports with insights and recommendations.
+
+ 
 **Data Description**
 
   There is two datasets:
@@ -12,6 +23,21 @@ Fields: order_id, customer_id, order_date, order_amount, shipping_address, order
 payments.csv (visualized as payments.png)
 
 Fields: payment_id, order_id, payment_date, payment_amount, payment_method, payment_status
+
+
+---
+
+
+
+## 📊 Tools Used
+
+- **SQL Server**
+- **Power BI**
+- **Excel / CSV**
+
+---
+
+
  
 
 ## SQL Code For Analysing the data 
@@ -303,7 +329,43 @@ Quesry Rseult -
 
  
 
-**Insinghts**
+ ## 🔍 Analysis Summary
+
+### 1. Order & Sales Analysis
+- Steady monthly sales (210–240 orders/month)
+- Balanced status distribution: pending/shipped/delivered
+- Max order value: $499.90
+
+### 2. Customer Insights
+- 60% repeat customer rate
+- Avg. 479 days between orders
+- Segments: One-time (40%), Occasional (49%), Frequent (11%)
+
+### 3. Payment Insights
+- 33% failure rate across all methods
+- 5,500 missing payments
+- 1,650 delivered orders unpaid
+
+### 4. Retention Insights (Power BI)
+- Retention Rate: **61.41%**
+- Drop-off sharp after first month
+- Cohorts from 2020 retained better than newer cohorts
+
+---
+
+## 📈 Recommendations
+
+- Recover unpaid orders (1,650)
+- Reduce payment failure via retry logic
+- Launch loyalty + reactivation campaigns
+- Improve order status resolution workflows
+
+
+## 🔗 Author
+
+**Prakash Ranjan**  
+[LinkedIn](https://www.linkedin.com/in/prakash-ranjan22)  
+[GitHub](https://github.com/PrakashRanjanShrivastava)
 
 
 
