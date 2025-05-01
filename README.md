@@ -16,16 +16,18 @@ This case study analyzes sales, customer behavior, and payment patterns for ALT 
 
 ### There is two datasets
 
-- customer_orders.csv 
+- customer_orders.csv
 
-<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/payments.csv">payments.csv</a>
+  <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/customer_orders.csv">customer_orders.csv</a>
+
 
 
 Fields: order_id, customer_id, order_date, order_amount, shipping_address, order_status
 
   - payments.csv  
 
-<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/customer_orders.csv">customer_orders.csv</a>
+<a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/payments.csv">payments.csv</a>
+
 
 Fields: payment_id, order_id, payment_date, payment_amount, payment_method, payment_status
 
