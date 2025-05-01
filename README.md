@@ -14,7 +14,7 @@ This case study analyzes sales, customer behavior, and payment patterns for ALT 
  
 **Data Description**
 
-  -There is two datasets/:
+- There is two datasets
 
 customer_orders.csv 
 
