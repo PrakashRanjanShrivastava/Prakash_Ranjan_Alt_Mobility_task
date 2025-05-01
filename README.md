@@ -14,16 +14,16 @@ This case study analyzes sales, customer behavior, and payment patterns for ALT 
  
 **Data Description**
 
-- There is two datasets
+### There is two datasets
 
-customer_orders.csv 
+- customer_orders.csv 
 
 <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/payments.csv">payments.csv</a>
 
 
 Fields: order_id, customer_id, order_date, order_amount, shipping_address, order_status
 
-payments.csv  
+  - payments.csv  
 
 <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/customer_orders.csv">customer_orders.csv</a>
 
@@ -47,47 +47,47 @@ Fields: payment_id, order_id, payment_date, payment_amount, payment_method, paym
 
 ## SQL Code For Analysing the data 
 
-ALL SQL QUERIES
+- ALL SQL QUERIES
 
 <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/_SQL_QURIES.pdf">ALL_SQL_QUERIES</a>
 
 ***1. Order and Sales Analysis***
 
---- KPIs:
+**KPIs:**
 
-Total number of orders
+- Total number of orders
 
-Order status distribution (pending, shipped, delivered)
+- Order status distribution (pending, shipped, delivered)
 
-Total revenue (SUM(order_amount))
+- Total revenue (SUM(order_amount))
 
-Revenue by order status
+- Revenue by order status
 
-Monthly revenue trend
+- Monthly revenue trend
 
-Highest order amount
+- Highest order amount
 
 
 **Order and Sales Analysis**
 
-SQL QUERIES
+- SQL QUERIES
 
  <a href ="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/orders-sales-analysis.sql">Orders_Sales.sql</a>
  
 
 **2. Customer Analysis***
 
- KPIs:
+ **KPIs**:
  
-Total unique customers
+- Total unique customers
 
-Repeat customers
+- Repeat customers
 
-Avg. order per customer
+- Avg. order per customer
 
-Order frequency trend by customer
+- Order frequency trend by customer
 
-Customer lifetime value (CLV proxy)
+ - Customer lifetime value (CLV proxy)
 
  
 
@@ -100,15 +100,15 @@ SQL QUERIES
 
 **3.Payment Status Analysis**
    
- KPIs:
+ **KPIs:**
  
-Payment status distribution (completed, pending, failed)
+- Payment status distribution (completed, pending, failed)
 
-Payment method performance
+- Payment method performance
 
-Failure rate by method
+- Failure rate by method
 
-Total paid vs unpaid orders
+ - Total paid vs unpaid orders
 
 **--Payment Status Analysis**
 
@@ -135,13 +135,13 @@ SQL QUERIES
 
  ## Customer Retention Analysis:
 
- GOAL:-
+ **GOAL:**-
 
- Track how many customers:
+ - Track how many customers:
 
-Placed their first order in Month X
+- Placed their first order in Month X
 
-Returned and placed additional orders in subsequent months
+- Returned and placed additional orders in subsequent months
 
 **SQL Query to Extract Cohort Retention Data:**
 
