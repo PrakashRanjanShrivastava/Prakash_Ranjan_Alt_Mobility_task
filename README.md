@@ -130,7 +130,7 @@ SQL QUERIES
 
    Table File
 
-<a href = " https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/Combined_Order_Payment_Report_Table.csv">Comprehensive order payment report</a>
+<a href=" https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/Combined_Order_Payment_Report_Table.csv">Comprehensive order payment report</a>
 
 
  ## Customer Retention Analysis:
