@@ -51,7 +51,7 @@ Fields: payment_id, order_id, payment_date, payment_amount, payment_method, paym
 
 <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/_SQL_QURIES.pdf">ALL_SQL_QUERIES</a>
 
-***1. Order and Sales Analysis***
+### ***1. Order and Sales Analysis***
 
 **KPIs:**
 
@@ -75,7 +75,7 @@ Fields: payment_id, order_id, payment_date, payment_amount, payment_method, paym
  <a href ="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/orders-sales-analysis.sql">Orders_Sales.sql</a>
  
 
-**2. Customer Analysis***
+### **2. Customer Analysis***
 
  **KPIs**:
  
@@ -93,12 +93,12 @@ Fields: payment_id, order_id, payment_date, payment_amount, payment_method, paym
 
  **Customer Analysis**
  
-SQL QUERIES
+- SQL QUERIES
  
  <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/customer_analysis.sql">Customer_Analysis.sql</a>
  
 
-**3.Payment Status Analysis**
+### **3.Payment Status Analysis**
    
  **KPIs:**
  
@@ -112,14 +112,14 @@ SQL QUERIES
 
 **--Payment Status Analysis**
 
- SQL QUERIES
+ - SQL QUERIES
  
  <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/payment_analysis.sql">Payments_Status.sql</a>
  
 
 ***4. Order Details Report***
 
-SQL QUERIES
+- SQL QUERIES
   
   <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/order_details_report.sql">Order_Details.sql</a>
  
@@ -128,12 +128,12 @@ SQL QUERIES
  
  ***Comprehensive order report***
 
-   Table File
+ - Table File
 
 <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data/Combined_Order_Payment_Report_Table.csv">Comprehensive order payment report</a>
 
 
- ## Customer Retention Analysis:
+ ### Customer Retention Analysis:
 
  **GOAL:**-
 
@@ -148,7 +148,7 @@ SQL QUERIES
  <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/SQL-Queries/retention_analysis.sql">Customer_Retention_Analysis.sql</a>
  
 
-Quesry Rseult - 
+- Quesry Rseult:- 
 
 <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Alt_Mobility_/blob/main/Cohort%20Retention.csv">veiw cohort retentaion table </a>
 
@@ -167,7 +167,7 @@ Quesry Rseult -
 
  
 
-**DashBoard**
+_ **DashBoard**
 
 <a href="https://github.com/PrakashRanjanShrivastava/Prakash_Ranjan_Alt_Mobility_task/blob/main/Data_Visualization_Power%20BI/Customer_retention.pbit">Power_BI_Dashboard</a>
  
